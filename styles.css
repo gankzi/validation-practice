@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 25%;
+}
+
+input, select {
+    width: 70%;
+    border-radius: 3px;
+    border: none;
+}
+
+.zipcode, .password, .password-confirm {
+    display: flex;
+}
+
+#zipcode, #password, #pwconfirm {
+    width: 100%;
+}
+
+#zipcode.invalid, #password.invalid, #pwconfirm.invalid {
+    border-color: red;
+    background-color: #fdd;   
+}
+
+.classDiv, .passwordDiv, .pw-confirmDiv {
+    width: 70%;
+    margin-left: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+.error {
+    width: 100%;
+    
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-left: 25.5%;
+    width: 20%;
+    border: none;
+    color: white;
+    text-align: center;
+    background-color: darkgray;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: gray;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
